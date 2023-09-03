@@ -1,0 +1,33 @@
+[14:27:57] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[14:27:57] [Server thread/INFO]: Loading properties
+[14:27:57] [Server thread/INFO]: Default game type: SURVIVAL
+[14:27:57] [Server thread/INFO]: Generating keypair
+[14:27:58] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:27:58] [Server thread/INFO]: Using default channel type
+[14:27:58] [Server thread/INFO]: Preparing level "nicolito"
+[14:27:59] [Server thread/INFO]: Loaded 488 advancements
+[14:27:59] [Server thread/INFO]: Preparing start region for level 0
+[14:28:00] [Server thread/INFO]: Preparing spawn area: 6%
+[14:28:01] [Server thread/INFO]: Preparing spawn area: 12%
+[14:28:02] [Server thread/INFO]: Preparing spawn area: 18%
+[14:28:03] [Server thread/INFO]: Preparing spawn area: 24%
+[14:28:04] [Server thread/INFO]: Preparing spawn area: 30%
+[14:28:05] [Server thread/INFO]: Preparing spawn area: 37%
+[14:28:06] [Server thread/INFO]: Preparing spawn area: 46%
+[14:28:07] [Server thread/INFO]: Preparing spawn area: 52%
+[14:28:08] [Server thread/INFO]: Preparing spawn area: 58%
+[14:28:09] [Server thread/INFO]: Preparing spawn area: 65%
+[14:28:10] [Server thread/INFO]: Preparing spawn area: 71%
+[14:28:11] [Server thread/INFO]: Preparing spawn area: 78%
+[14:28:12] [Server thread/INFO]: Preparing spawn area: 84%
+[14:28:13] [Server thread/INFO]: Preparing spawn area: 91%
+[14:28:14] [Server thread/INFO]: Preparing spawn area: 98%
+[14:28:15] [Server thread/INFO]: Done (16,586s)! For help, type "help" or "?"
+[14:28:17] [Server thread/INFO]: Stopping the server
+[14:28:17] [Server thread/INFO]: Stopping server
+[14:28:17] [Server thread/INFO]: Saving players
+[14:28:17] [Server thread/INFO]: Saving worlds
+[14:28:17] [Server thread/INFO]: Saving chunks for level 'nicolito'/overworld
+[14:28:18] [Server thread/INFO]: Saving chunks for level 'nicolito'/the_nether
+[14:28:18] [Server thread/INFO]: Saving chunks for level 'nicolito'/the_end
+[14:28:19] [Server Shutdown Thread/INFO]: Stopping server

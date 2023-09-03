@@ -93,7 +93,7 @@ def properties():
         print("Nombre cambiado")
         time.sleep(1)
 
-    if sel =="2":
+    elif sel =="2":
         limpiar_consola()
         dificulty = input("0) Pacifico\n1) Facil\n2)Normal\n\nIngrese dificultad: ")
         with open("server.properties","r") as archivo:
@@ -103,19 +103,35 @@ def properties():
             archivo.writelines(linea)
         print("Dificultad cambiada")
         time.sleep(1)
+    
+    elif sel =="3":
+        limpiar_consola()
+        gamemode = input("0) Pacifico\n1) Facil\n2)Normal\n\nIngrese dificultad: ")
+        with open("server.properties","r") as archivo:
+            linea = archivo.readlines()
+        linea[29] = f"difficulty={dificulty}\n"
+        with open("server.properties","w") as archivo:
+            archivo.writelines(linea)
+        print("Dificultad cambiada")
+        time.sleep(1)
+
+#ELIMINAR SERVIDOR
+def delete_server():
+    print("hola")
+    
 
 #BLOQUE MENÚ PRINCIPAL
 while True:
     limpiar_consola()
-    print("Lanzador de Servidores para Minecraft\n-------------------------------------\n\nMenú Principal\n\n(1) Iniciar Servidor\n(2) Licencia\n(3) Salir\n")
+    print("Lanzador de Servidores para Minecraft\n-------------------------------------\n\nMenú Principal\n\n(1) Iniciar Servidor\n(2) Licencia\n(3) EULA\n(4) Editar Propiedades\n(5) Salir\n")
     seleccion = input("Selecciona una opción= ")    
     if seleccion == "1":
         ram()
     elif seleccion == "2":
         about()
     elif seleccion == "3":
-        exiit()
-    elif seleccion == "4":
         eula()
-    elif seleccion == "5":
+    elif seleccion == "4":
         properties()
+    elif seleccion == "5":
+        exiit()
