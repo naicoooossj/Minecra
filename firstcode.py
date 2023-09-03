@@ -98,7 +98,7 @@ def properties():
         dificulty = input("0) Pacifico\n1) Facil\n2)Normal\n\nIngrese dificultad: ")
         with open("server.properties","r") as archivo:
             linea = archivo.readlines()
-        linea[27] = f"difficulty={dificulty}\n"
+        linea[26] = f"difficulty={dificulty}\n"
         with open("server.properties","w") as archivo:
             archivo.writelines(linea)
         print("Dificultad cambiada")
@@ -106,14 +106,26 @@ def properties():
     
     elif sel =="3":
         limpiar_consola()
-        gamemode = input("0) Pacifico\n1) Facil\n2)Normal\n\nIngrese dificultad: ")
+        gamemode = input("0) Survival\n1) Creativo\n3)Aventura\n\nIngrese modo de juego: ")
         with open("server.properties","r") as archivo:
             linea = archivo.readlines()
-        linea[29] = f"difficulty={dificulty}\n"
+        linea[28] = f"gamemode={gamemode}\n"
         with open("server.properties","w") as archivo:
             archivo.writelines(linea)
-        print("Dificultad cambiada")
+        print("Modo de juego cambiado")
         time.sleep(1)
+    elif sel =="4":
+        limpiar_consola()
+        onlinemode = input("Escribe TRUE para que sea PREMIUM\nEscribe FALSE para que sea NO PREMIUM: ")
+        with open("server.properties","r") as archivo:
+            linea = archivo.readlines()
+        linea[23] = f"online-mode={onlinemode.lower()}\n"
+        with open("server.properties","w") as archivo:
+            archivo.writelines(linea)
+        print("CAMBIADO")
+        time.sleep(1)
+    else:
+        return
 
 #ELIMINAR SERVIDOR
 def delete_server():
@@ -123,15 +135,15 @@ def delete_server():
 #BLOQUE MENÚ PRINCIPAL
 while True:
     limpiar_consola()
-    print("Lanzador de Servidores para Minecraft\n-------------------------------------\n\nMenú Principal\n\n(1) Iniciar Servidor\n(2) Licencia\n(3) EULA\n(4) Editar Propiedades\n(5) Salir\n")
+    print("Lanzador de Servidores para Minecraft\n-------------------------------------\n\nMenú Principal\n\n(1) Iniciar Servidor\n(2) Aceptar EULA\n(3) Configurar Servidor\n(4) Licencia\n(5) Salir\n")
     seleccion = input("Selecciona una opción= ")    
     if seleccion == "1":
         ram()
     elif seleccion == "2":
-        about()
-    elif seleccion == "3":
         eula()
-    elif seleccion == "4":
+    elif seleccion == "3":
         properties()
+    elif seleccion == "4":
+        about()
     elif seleccion == "5":
         exiit()
